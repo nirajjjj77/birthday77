@@ -198,14 +198,8 @@ span:nth-child(4) { filter: blur(150px); }
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
 }
 
-#cake {
-  display: none; /* Hidden until Continue is clicked */
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .cake-container {
+              display: none;
               position: fixed;
               top: 50%;
               left: 50%;
@@ -213,7 +207,6 @@ span:nth-child(4) { filter: blur(150px); }
               perspective: 1000px;
               width: 300px;
               height: 300px;
-              display: flex;
               justify-content: center;
               align-items: center;
             }

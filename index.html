@@ -74,7 +74,7 @@
             // Redirect to cake section (you need to have a section with id="cake")
             continueButton.addEventListener('click', () => {
                 document.querySelectorAll('.box-c, .container, .bbl, .continue-button').forEach(el => el.style.display = 'none'); 
-                document.getElementById('cake').style.display = 'flex'; // Show the cake
+                document.querySelector('.cake-container').style.display = 'flex'; // Show the cake
             });
 
             document.body.appendChild(continueButton);
