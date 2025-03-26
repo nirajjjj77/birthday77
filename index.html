@@ -40,7 +40,15 @@
             </div>
         </div>
         <div id="cake" class="cake-container">
-            <img src="assets/cake.png" alt="Birthday Cake" class="cake-image">
+            <div class="cake">
+                <div class="layer layer-bottom"></div>
+                <div class="layer layer-middle"></div>
+                <div class="layer layer-top"></div>
+                <div class="icing"></div>
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
         </div>        
         <script>
             // Create Continue Button
@@ -50,7 +58,8 @@
 
             // Redirect to cake section (you need to have a section with id="cake")
             continueButton.addEventListener('click', () => {
-                window.location.href = "#cake"; // Smooth scroll to the cake
+                document.querySelectorAll('.box-c, .container, .bbl, .continue-button').forEach(el => el.style.display = 'none'); 
+                document.getElementById('cake').style.display = 'flex'; // Show the cake
             });
 
             document.body.appendChild(continueButton);
