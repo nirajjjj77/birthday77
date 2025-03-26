@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://i.ibb.co/bMz8XJPt/Screenshot-2025-03-12-10-46-00-08-99c04817c0de5652397fc8b56c3b3817.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/background.jpg);
     background-size: cover;
     background-position: center;
     margin-top: 40px;
@@ -140,7 +140,7 @@ span:nth-child(4) { filter: blur(150px); }
     height: 180px;
     width: 180px;
     position: absolute;
-    background: url(https://i.ibb.co/yczqM5kV/IMG-20250307-WA0014.jpg); /* Updated image URL */
+    background: url(assets/innercircle.jpg); /* Updated image URL */
     background-size: cover; /* Ensures the image covers the circle */
     background-position: center; /* Centers the image */
     top: 10px;
