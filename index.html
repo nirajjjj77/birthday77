@@ -39,7 +39,22 @@
                 </div>
             </div>
         </div>
+        <div id="cake" class="cake-container">
+            <img src="assets/cake.png" alt="Birthday Cake" class="cake-image">
+        </div>        
         <script>
+            // Create Continue Button
+            const continueButton = document.createElement('button');
+            continueButton.textContent = '🎂 Continue';
+            continueButton.classList.add('continue-button'); // Apply new CSS class
+
+            // Redirect to cake section (you need to have a section with id="cake")
+            continueButton.addEventListener('click', () => {
+                window.location.href = "#cake"; // Smooth scroll to the cake
+            });
+
+            document.body.appendChild(continueButton);
+
             // Add this script to start music on page load
             document.addEventListener('DOMContentLoaded', function() {
                 const music = document.getElementById('background-music');
