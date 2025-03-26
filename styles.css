@@ -159,7 +159,7 @@ span:nth-child(4) { filter: blur(150px); }
 .music-toggle {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 1000;
     background: linear-gradient(45deg, #ff00e0, #ffeb3b, #14ffe9);
     color: #000;
@@ -176,3 +176,44 @@ span:nth-child(4) { filter: blur(150px); }
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
+
+.continue-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Positioned on the right */
+    z-index: 1000;
+    background: linear-gradient(45deg, #ff5733, #ffbd69);
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.continue-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+}
+
+.cake-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.cake-image {
+    width: 250px;
+    height: auto;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
